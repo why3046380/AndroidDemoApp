@@ -38,7 +38,6 @@ public class MyActivity extends Activity {
             if (httpResponse.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
                 // 取得返回的数据
                 strResult = EntityUtils.toString(httpResponse.getEntity());
-                Log.d("ff","fffffffffff");
             }
         } catch (ClientProtocolException e) {
 //            tvJson.setText("protocol error");
