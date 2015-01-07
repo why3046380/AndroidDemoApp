@@ -2,6 +2,7 @@ package com.example.myapp;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
@@ -37,6 +38,7 @@ public class MyActivity extends Activity {
             if (httpResponse.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
                 // 取得返回的数据
                 strResult = EntityUtils.toString(httpResponse.getEntity());
+                Log.d("ff","fffffffffff");
             }
         } catch (ClientProtocolException e) {
 //            tvJson.setText("protocol error");
